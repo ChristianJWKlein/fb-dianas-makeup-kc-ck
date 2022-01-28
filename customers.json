@@ -1,0 +1,61 @@
+[
+    {
+      "fname": "Bobby",
+      "lname": "Flay",
+      "phone": "772-443-6789",
+      "shippingAddress": {
+          "streetAddress1": "7035 Beracasa Way Unit 207",
+          "streetAddress2": "Unit 207",
+          "city": "Boca Raton",
+          "state": "FL",
+          "zipCode": "33433"
+        },
+      "billingAddress": {
+          "streetAddress1": "7035 Beracasa Way Unit 207",
+          "streetAddress2": "Unit 207",
+          "city": "Boca Raton",
+          "state": "FL",
+          "zipCode": "33433"
+        }
+
+      },
+    {
+      "fname": "Keren",
+      "lname": "Charles",
+      "phone": "772-333-333",
+      "shippingAddress": {
+          "streetAddress1": "123 apple way",
+          "streetAddress2": "Unit 3",
+          "city": "Sacramento",
+          "state": "CA",
+          "zipCode": "34567"
+        },
+      "billingAddress": {
+          "streetAddress1": "7035 Beracasa Way Unit 207",
+          "streetAddress2": "Unit 207",
+          "city": "Boca Raton",
+          "state": "FL",
+          "zipCode": "33433"
+        }
+        
+      },
+    {
+      "fname": "Dwyane",
+      "lname": "Wade",
+      "phone": "667-889-0909",
+      "shippingAddress": {
+          "streetAddress1": "5512 East Street",
+          "streetAddress2": "Unit 309",
+          "city": "New York",
+          "state": "NY",
+          "zipCode": "01897"
+        },
+      "billingAddress": {
+          "streetAddress1": "445 green street",
+          "streetAddress2": "Unit 567",
+          "city": "New York",
+          "state": "NY",
+          "zipCode": "01467"
+        }
+      }
+]  

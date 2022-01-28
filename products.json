@@ -1,0 +1,24 @@
+[
+    {
+        "brand": "Gucci",
+        "description": "Lipstick",
+        "price": 15.00,
+        "color": "red"
+        
+    },
+    {
+        "brand": "Sephora",
+        "description": "Mascara",
+        "price": 35.00,
+        "color": "pink"
+        
+    },
+    {
+        "brand": "Channel",
+        "description": "Lip Gloss",
+        "price": 32.00,
+        "color": "orange"
+        
+    }
+  
+]

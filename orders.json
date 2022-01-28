@@ -1,0 +1,27 @@
+[
+    {
+        "orderId": "",
+        "customerId": "",
+        "orderTotal": [
+            {
+                "productId": "",
+                "quantity": ""
+            },
+            {
+                "productId": "",
+                "quantity": ""
+            },
+            {
+                "productId": "",
+                "quantity": ""
+            }
+
+            
+        ],
+        ""
+        
+        
+    },
+  
+  
+]
