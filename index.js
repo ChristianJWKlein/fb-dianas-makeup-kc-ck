@@ -67,10 +67,10 @@ const prodRef = db.collection("products");
 // db.collection("customers")
 //   .doc("HS6avhDVTYPtVA5VpfFo")
 //   .get()
-//   .then((doc) => {
-//     console.log(doc.id, " ===> ", doc.data());
-//   })
-//   .catch(console.error);
+// .then((doc) => {
+//   console.log(doc.id, " ===> ", doc.data());
+// })
+// .catch(console.error);
 
 //get all documents..below we actually get a snapshot of the database at that time.
 // prodRef
@@ -92,15 +92,22 @@ const prodRef = db.collection("products");
 //   .catch(console.error);
 
 //querying a collection
-custRef
-  .where("lname", "==", "Wade")
-  .get()
-  .then((snapshot) => {
-    snapshot.forEach((doc) => {
-      //todd may not have had snapshot on this line
-      console.log(doc.data());
-    });
-  })
-  .catch(console.error);
+// custRef
+//   .where("lname", "==", "Wade")
+//   .where("fname", "==", "Dwyane")
+//   .get()
+//   .then((snapshot) => {
+//     snapshot.forEach((doc) => {
+//       //todd may not have had snapshot on this line
+//       console.log(doc.data());
+//     });
+//   })
+//   .catch(console.error);
 
 // challenge for Keren.... Query a product from the products collection below.
+
+//update a product to add in Discount Price..added into "Spehora"..Confirmed
+
+prodRef.doc("HXsGAcOKjIba324dXv33").update({ discPrice: 30 });
+
+//Challenge for Keren...Update the Channel brand products to add in the Discount Price.
