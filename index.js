@@ -1,5 +1,6 @@
 //import our customers
 const customers = require("./customers.json");
+const products = require("./products.json");
 
 // //import a set of tools to talk to firebase and firestore
 const {
@@ -23,50 +24,83 @@ initializeApp({
 
 // //connect to firestore
 const db = getFirestore();
-console.log("it worked");
+//console.log("it worked");
 
-// // refernce to restaurant collect since used heavily
-// const restRef = db.collection("restaurants");
+//  reference to customer, products and orders collection since used heavily
+const custRef = db.collection("customers");
+const prodRef = db.collection("products");
 
-//create a collection called "restaurants"
+//create a collection called "customers" & "products"
 
-//add each restaurants
-// restRef
-//   .add(restaurants[1])
+//  **** Customers and Products already added in *** Do not run! Do not run below code blocks
+//below adds customers and products to db by specifying index of .json arrays
+
+// custRef
+//   .add(customers[2])
 //   .then((doc) => {
-//     console.log("added restaurant", doc.id);
+//     console.log("added customer", doc.id);
 //   })
 //   .catch((err) => {
 //     console.log(err);
 //   });
 
-//read one document
-// db.collection(restaurants)
-//   .doc("rMPMYE1RhsOmmYQKIkcr")
+// prodRef
+//   .add(products[2])
+//   .then((doc) => {
+//     console.log("added product", doc.id);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+/// **** END DO NOT RUN AREA.
+
+//read one document...customers and products...orders to come
+// db.collection("products")
+//   .doc("maTKKhFgh60RqNOZFbzh")
 //   .get()
 //   .then((doc) => {
-//     console.log(doc.id, " => ", doc.data());
+//     console.log(doc.id, " ===> ", doc.data());
 //   })
-//   .catch((err) => console.error(err));
+//   .catch(console.error);
+
+// db.collection("customers")
+//   .doc("HS6avhDVTYPtVA5VpfFo")
+//   .get()
+//   .then((doc) => {
+//     console.log(doc.id, " ===> ", doc.data());
+//   })
+//   .catch(console.error);
 
 //get all documents..below we actually get a snapshot of the database at that time.
-// restRef
+// prodRef
 //   .get()
 //   .then((snapshot) =>
 //     snapshot.forEach((doc) => {
-//       console.log(doc.id, " => ", doc.data());
+//       console.log(doc.id, " ===> ", doc.data());
+//     })
+//   )
+//   .catch(console.error);
+
+// custRef
+//   .get()
+//   .then((snapshot) =>
+//     snapshot.forEach((doc) => {
+//       console.log(doc.id, " ===> ", doc.data());
 //     })
 //   )
 //   .catch(console.error);
 
 //querying a collection
-// restRef
-//   .where("name", "==", "Bolay")
-//   .get()
-//   .then((snapshot) => {
-//     snapshot.forEach((doc) => {
-//       //todd may not have had snapshot on this line
-//       console.log(doc.data());
-//     });
-//   })
-//   .catch(console.error);
+custRef
+  .where("lname", "==", "Wade")
+  .get()
+  .then((snapshot) => {
+    snapshot.forEach((doc) => {
+      //todd may not have had snapshot on this line
+      console.log(doc.data());
+    });
+  })
+  .catch(console.error);
+
+// challenge for Keren.... Query a product from the products collection below.
